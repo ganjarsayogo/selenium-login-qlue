@@ -81,9 +81,9 @@ class TestLogin(unittest.TestCase):
         driver = self.driver
         driver.get("https://dashboard-dev.qlue.ai/login?email=&redirect_to=")
         time.sleep(1)
-        driver.find_element(By.NAME, "email").send_keys("ganjar.sayogo1@gmail.com")
+        driver.find_element(By.NAME, "email").send_keys("ganjar.sayogo@gmail.com")
         time.sleep(1)
-        driver.find_element(By.NAME, "password").send_keys("G@njar123")
+        driver.find_element(By.NAME, "password").send_keys("G@njar1234")
         time.sleep(1)
         driver.find_element(By.XPATH, "/html/body/div[1]/div[3]/div/main/div[2]/div/form/button").click()
         time.sleep(1)
